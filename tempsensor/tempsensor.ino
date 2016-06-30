@@ -9,7 +9,7 @@
 
 OneWire oneWire(ONE_WIRE_BUS); // Define uma instancia do oneWire para comunicacao com o sensor
 DallasTemperature sensors(&oneWire); // Cria o objeto para interface com os sensores
-DeviceAddress Probes[10]; // Variável para armazenamento dos endereços dos sensores
+DeviceAddress Probes[10]; // Variável para armazenamento dos endereços dos sensores, configurada para até 10 sensores, no entato é só alterar o valor caso necessite de mais
 LiquidCrystal lcd(12, 11, 7, 6, 5, 4); // Inicia o LCD
 
 int DevicesFound = 0; // Variável para armazenamento do número total de sensores
